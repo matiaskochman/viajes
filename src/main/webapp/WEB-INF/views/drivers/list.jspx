@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_viajes_entity_Driver" items="${drivers}" z="H5N+IhPwMjbnW6pK9LkAj3q2gU0=">
+        <table:table data="${drivers}" id="l_com_viajes_entity_Driver" path="/drivers" z="oSi+evvnAfJFBzq5oR9fN056Tbw=">
+            <table:column id="c_com_viajes_entity_Driver_name" property="name" z="pyx+PIxrDrYHtozpFDROWveJ9Kw="/>
+            <table:column id="c_com_viajes_entity_Driver_surname" property="surname" z="bGYbF4PLjqFbKYYyyeVe5KTOwRs="/>
+            <table:column id="c_com_viajes_entity_Driver_phone1" property="phone1" z="xu1xPTxE+DyIcIsNHtVWX78QKq8="/>
+            <table:column id="c_com_viajes_entity_Driver_phone2" property="phone2" z="Pv/V07mceuIyQuq+9SwxalIKVb8="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_viajes_entity_Trip" items="${trips}" z="pwjzjgE5hDGw9pkcuSBi4IV9+ws=">
+        <table:table data="${trips}" id="l_com_viajes_entity_Trip" path="/trips" z="EAM/14kXaUwJHVf8c8Luu7KqVYk=">
+            <table:column calendar="true" dateTimePattern="${trip_startdate_date_format}" id="c_com_viajes_entity_Trip_startDate" property="startDate" z="lnWEPXbVmaem6O/6pZnVgpIK1A4="/>
+            <table:column id="c_com_viajes_entity_Trip_numberOfSeats" property="numberOfSeats" z="QNkY+puAPpSFIYf/aMTZmlrqJps="/>
+            <table:column id="c_com_viajes_entity_Trip_destination" property="destination" z="amaxmhKCM2R8MdkPjbv7qcyVAFs="/>
+            <table:column id="c_com_viajes_entity_Trip_tripState" property="tripState" z="SJjUIY6yJXPnC5KfscF5KFlZ444="/>
+        </table:table>
+    </page:list>
+</div>

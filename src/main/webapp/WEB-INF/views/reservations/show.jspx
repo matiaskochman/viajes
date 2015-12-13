@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_viajes_entity_Reservation" object="${reservation}" path="/reservations" z="p9kVOECVXAZ4DA7k9OiP2rA1Cts=">
+        <field:display field="name" id="s_com_viajes_entity_Reservation_name" object="${reservation}" z="5PAss2gBIhzDakDZIl8jTQLb+c4="/>
+        <field:display calendar="true" dateTimePattern="${reservation_reservationdate_date_format}" field="reservationDate" id="s_com_viajes_entity_Reservation_reservationDate" object="${reservation}" z="Svky/KGP1IEVPiBVkSnPE0kXMUE="/>
+        <field:display field="numberOfSeats" id="s_com_viajes_entity_Reservation_numberOfSeats" object="${reservation}" z="4wK6FRvt/55QIsVkIjzqMY6TqWI="/>
+        <field:display field="trip" id="s_com_viajes_entity_Reservation_trip" object="${reservation}" z="VKQkYf4mJWdBiZeEceBB7QOCSnY="/>
+    </page:show>
+</div>

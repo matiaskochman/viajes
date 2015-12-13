@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_viajes_entity_Driver" object="${driver}" path="/drivers" z="/TX7JcPSGiDvlOTuZHX4eiuNsxM=">
+        <field:display field="name" id="s_com_viajes_entity_Driver_name" object="${driver}" z="n5gGpPWjSbBxBvPoIm1ETggAOdg="/>
+        <field:display field="surname" id="s_com_viajes_entity_Driver_surname" object="${driver}" z="3FchtTIEPP0DeDSeRPh1Lqu8stk="/>
+        <field:display field="phone1" id="s_com_viajes_entity_Driver_phone1" object="${driver}" z="pfFJucm/mC+LSMegQjC9P7WybsM="/>
+        <field:display field="phone2" id="s_com_viajes_entity_Driver_phone2" object="${driver}" z="oJ+uGGzIGSTF22OtlhDudWOwQHU="/>
+    </page:show>
+</div>

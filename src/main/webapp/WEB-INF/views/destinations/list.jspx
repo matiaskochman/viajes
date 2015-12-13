@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_viajes_entity_Destination" items="${destinations}" z="ZgaFw9nTtFZSHHk01/RgxURXHyI=">
+        <table:table data="${destinations}" id="l_com_viajes_entity_Destination" path="/destinations" z="pGqo+IkZx+xnZreXhmQtD1Oyz3w=">
+            <table:column id="c_com_viajes_entity_Destination_name" property="name" z="sKClug28c+VsdfOx2poRlPT0ltI="/>
+            <table:column id="c_com_viajes_entity_Destination_code" property="code" z="I49BNMrovSMuASomIT7oME8wA18="/>
+            <table:column id="c_com_viajes_entity_Destination_description" property="description" z="v5mHQ+/Q6kokuiRdQDq86cW+crM="/>
+        </table:table>
+    </page:list>
+</div>

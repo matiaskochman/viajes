@@ -1,0 +1,33 @@
+// Spring Roo 2.0.0.M1 [rev 33e5d76] log opened at 2015-12-12 14:53:14
+project setup --topLevelPackage com.viajes --projectName viajes --java 6 --packaging WAR
+// Spring Roo 2.0.0.M1 [rev 33e5d76] log closed at 2015-12-12 14:53:16
+// Spring Roo 2.0.0.M1 [rev 33e5d76] log opened at 2015-12-12 14:53:21
+jpa setup --database MYSQL --provider HIBERNATE 
+entity jpa --class com.viajes.entity.Driver
+field string --fieldName name
+field string --fieldName surname
+field string --fieldName phone1
+field string --fieldName phone2
+entity jpa --class com.viajes.entity.Destination
+field string --fieldName name
+field string --fieldName code
+field string --fieldName description
+entity jpa --class com.viajes.entity.Reservation
+field string --fieldName name
+field date --type java.util.Calendar --fieldName reservationDate
+field number --type java.lang.Integer --fieldName numberOfSeats
+entity jpa --class com.viajes.entity.Trip
+field date --type java.util.Calendar --fieldName startDate
+field number --type java.lang.Integer --fieldName numberOfSeats
+service all --interfacePackage com.viajes.service
+web mvc setup 
+web mvc all --package com.viajes.controller
+focus --class ~.entity.Trip
+field reference --type ~.entity.Destination --fieldName destination
+focus --class ~.entity.Reservation
+field reference --type ~.entity.Trip --fieldName trip
+// Spring Roo 2.0.0.M1 [rev 33e5d76] log closed at 2015-12-12 15:20:54
+// Spring Roo 2.0.0.M1 [rev 33e5d76] log opened at 2015-12-12 15:21:37
+focus --class ~.entity.Trip
+// [failed] field enum --type ~.constants.TripState --fieldName state
+field enum --type ~.constants.TripState --fieldName tripState
