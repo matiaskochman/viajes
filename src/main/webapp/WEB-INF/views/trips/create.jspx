@@ -7,6 +7,7 @@
         <field:input field="numberOfSeats" id="c_com_viajes_entity_Trip_numberOfSeats" validationMessageCode="field_invalid_integer" z="Kg+ZrPIK1RKm8rrbgb8ZBtvkTI4="/>
         <field:select field="destination" id="c_com_viajes_entity_Trip_destination" itemValue="id" items="${destinations}" path="/destinations" z="LBDob5Wqa4I3eAJZFWKQedQ3cEQ="/>
         <field:select field="tripState" id="c_com_viajes_entity_Trip_tripState" items="${tripstates}" path="tripstates" z="x/4jhT6iGv18U6rUm3kMf/iv2+o="/>
+        <field:select field="reservationList" id="c_com_viajes_entity_Trip_reservationList" itemValue="id" items="${reservations}" multiple="true" path="/reservations" z="pipvpDTO/U5CRyD27RsEcTPLNwI="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_viajes_entity_Trip" render="${not empty dependencies}" z="VeseKFXLqaqL6ma1YPI5zxsqwJk="/>
 </div>

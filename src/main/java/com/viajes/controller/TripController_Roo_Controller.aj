@@ -7,6 +7,7 @@ import com.viajes.constants.TripState;
 import com.viajes.controller.TripController;
 import com.viajes.entity.Trip;
 import com.viajes.service.DestinationService;
+import com.viajes.service.ReservationService;
 import com.viajes.service.TripService;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
@@ -31,6 +32,9 @@ privileged aspect TripController_Roo_Controller {
     
     @Autowired
     DestinationService TripController.destinationService;
+    
+    @Autowired
+    ReservationService TripController.reservationService;
     
     @RequestMapping(method = RequestMethod.POST, produces = "text/html")
     public String TripController.create(@Valid Trip trip, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
@@ -108,6 +112,7 @@ privileged aspect TripController_Roo_Controller {
         addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("tripstates", Arrays.asList(TripState.values()));
         uiModel.addAttribute("destinations", destinationService.findAllDestinations());
+        uiModel.addAttribute("reservations", reservationService.findAllReservations());
     }
     
     String TripController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

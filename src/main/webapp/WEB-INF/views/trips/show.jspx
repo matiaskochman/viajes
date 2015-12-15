@@ -7,5 +7,6 @@
         <field:display field="numberOfSeats" id="s_com_viajes_entity_Trip_numberOfSeats" object="${trip}" z="xMfPfwqGTAuA54tLYjh4kka2IyU="/>
         <field:display field="destination" id="s_com_viajes_entity_Trip_destination" object="${trip}" z="9WCnTP1T/nQzfbwOkmexA+Ke5cU="/>
         <field:display field="tripState" id="s_com_viajes_entity_Trip_tripState" object="${trip}" z="1Y+ydeTgEzjBsm7kwwziHkz8aow="/>
+        <field:display field="reservationList" id="s_com_viajes_entity_Trip_reservationList" object="${trip}" z="u5y62FNX/Wt0KsabCF3xKQtHycU="/>
     </page:show>
 </div>

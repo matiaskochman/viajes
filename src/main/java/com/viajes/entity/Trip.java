@@ -9,6 +9,10 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.ManyToOne;
 import com.viajes.constants.TripState;
 import javax.persistence.Enumerated;
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.ManyToMany;
 
 @RooJavaBean
 @RooToString
@@ -34,4 +38,9 @@ public class Trip {
      */
     @Enumerated
     private TripState tripState;
+
+    /**
+     */
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<Reservation> reservationList = new ArrayList<Reservation>();
 }

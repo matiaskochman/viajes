@@ -33,14 +33,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     @Autowired
     TripService ApplicationConversionServiceFactoryBean.tripService;
     
-    public Converter<Destination, String> ApplicationConversionServiceFactoryBean.getDestinationToStringConverter() {
-        return new org.springframework.core.convert.converter.Converter<com.viajes.entity.Destination, java.lang.String>() {
-            public String convert(Destination destination) {
-                return new StringBuilder().append(destination.getName()).append(' ').append(destination.getCode()).append(' ').append(destination.getDescription()).toString();
-            }
-        };
-    }
-    
     public Converter<Long, Destination> ApplicationConversionServiceFactoryBean.getIdToDestinationConverter() {
         return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.viajes.entity.Destination>() {
             public com.viajes.entity.Destination convert(java.lang.Long id) {
@@ -101,14 +93,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         return new org.springframework.core.convert.converter.Converter<java.lang.String, com.viajes.entity.Reservation>() {
             public com.viajes.entity.Reservation convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), Reservation.class);
-            }
-        };
-    }
-    
-    public Converter<Trip, String> ApplicationConversionServiceFactoryBean.getTripToStringConverter() {
-        return new org.springframework.core.convert.converter.Converter<com.viajes.entity.Trip, java.lang.String>() {
-            public String convert(Trip trip) {
-                return new StringBuilder().append(trip.getStartDate()).append(' ').append(trip.getNumberOfSeats()).toString();
             }
         };
     }

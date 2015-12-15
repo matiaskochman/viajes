@@ -8,6 +8,7 @@
             <table:column id="c_com_viajes_entity_Trip_numberOfSeats" property="numberOfSeats" z="QNkY+puAPpSFIYf/aMTZmlrqJps="/>
             <table:column id="c_com_viajes_entity_Trip_destination" property="destination" z="amaxmhKCM2R8MdkPjbv7qcyVAFs="/>
             <table:column id="c_com_viajes_entity_Trip_tripState" property="tripState" z="SJjUIY6yJXPnC5KfscF5KFlZ444="/>
+            <table:column id="c_com_viajes_entity_Trip_reservationList" property="reservationList" z="PEdVN2RhVBhexs66eyoodyONAIY="/>
         </table:table>
     </page:list>
 </div>

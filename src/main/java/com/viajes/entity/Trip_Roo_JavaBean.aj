@@ -5,8 +5,10 @@ package com.viajes.entity;
 
 import com.viajes.constants.TripState;
 import com.viajes.entity.Destination;
+import com.viajes.entity.Reservation;
 import com.viajes.entity.Trip;
 import java.util.Calendar;
+import java.util.List;
 
 privileged aspect Trip_Roo_JavaBean {
     
@@ -40,6 +42,14 @@ privileged aspect Trip_Roo_JavaBean {
     
     public void Trip.setTripState(TripState tripState) {
         this.tripState = tripState;
+    }
+    
+    public List<Reservation> Trip.getReservationList() {
+        return this.reservationList;
+    }
+    
+    public void Trip.setReservationList(List<Reservation> reservationList) {
+        this.reservationList = reservationList;
     }
     
 }
